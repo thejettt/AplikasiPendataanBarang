@@ -18,6 +18,8 @@ public class DisplayMenu {
             System.out.println("1. Tambah Produk");
             System.out.println("2. Jual Produk");
             System.out.println("3. Tampilkan Produk");
+            System.out.println("4. Urutkan Produk");
+//            System.out.println("5. Tampilkan Produk(Linked List)");
             System.out.println("x. Keluar");
             System.out.print("Pilih : ");
 
@@ -50,6 +52,14 @@ public class DisplayMenu {
                         System.out.println("ID: " + p.getId() + ", Nama: " + p.getName() + ", Jumlah: " + p.getQuantity());
                     }
                     break;
+                case "4":
+                    productService.sortProducts();
+                    System.out.println("Produk berhasil diurutkan berdasarkan ID.");
+                    break;
+//                case "5":
+//                    System.out.println("\nDaftar Produk(Linked List");
+//                    productService.displayProductsUsingLinkedList();
+//                    break;
                 case "x":
                     return;
                 default:

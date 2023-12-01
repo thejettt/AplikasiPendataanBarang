@@ -29,7 +29,13 @@ public class productService {
     public List<Product> getProducts() {
         return productRepository.getProducts();
     }
+    public void sortProducts(){
+        productRepository.sortProductsById();
+    }
+//    public void displayProductsUsingLinkedList(){
+//        productRepository.displayProductsUsingLinkedList();
+//    }
 
-    // Additional methods for managing products
+
 
 }
